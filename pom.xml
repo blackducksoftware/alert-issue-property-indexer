@@ -88,6 +88,13 @@
     </pluginRepositories>
 
     <dependencies>
+        <!-- must include this jta dependency to override the one from the jira-api, see https://jira.atlassian.com/browse/JRA-43031 -->
+        <dependency>
+            <groupId>javax.transaction</groupId>
+            <artifactId>jta</artifactId>
+            <version>1.0.1B</version>
+            <scope>provided</scope>
+        </dependency>
         <dependency>
             <groupId>com.atlassian.jira</groupId>
             <artifactId>jira-api</artifactId>
