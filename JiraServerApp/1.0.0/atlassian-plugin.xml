@@ -1,0 +1,27 @@
+<atlassian-plugin key="com.synopsys.integration.alert" name="Alert Issue Property Indexer" plugins-version="2">
+    <plugin-info>
+        <description>An application used for indexing issue properties to allow Alert to map notifications to the correct issue(s).</description>
+        <version>0.0.1</version>
+        <vendor name="Synopsys, Inc." url="https://www.synopsys.com/"/>
+        <param name="atlassian-data-center-status">compatible</param>
+        <param name="atlassian-data-center-compatible">true</param>
+        <param name="plugin-icon">images/synopsysIcon.png</param>
+        <param name="plugin-logo">images/synopsysLogo.png</param>
+    </plugin-info>
+    <index-document-configuration entity-key="IssueProperty" key="com-synopsys-integration-alert">
+        <key property-key="com-synopsys-integration-alert">
+            <extract path="name" type="string"/>
+            <extract path="provider" type="string"/>
+            <extract path="topicName" type="string"/>
+            <extract path="topicValue" type="string"/>
+            <extract path="subTopicName" type="string"/>
+            <extract path="subTopicValue" type="string"/>
+            <extract path="category" type="string"/>
+            <extract path="componentName" type="string"/>
+            <extract path="componentValue" type="string"/>
+            <extract path="subComponentName" type="string"/>
+            <extract path="subComponentValue" type="string"/>
+            <extract path="additionalKey" type="string"/>
+        </key>
+    </index-document-configuration>
+</atlassian-plugin>
