@@ -1,16 +1,13 @@
 language: java
 sudo: false
 install: true
-
 addons:
   sonarcloud:
-    organization: "black-duck-software"
+    organization: black-duck-software
     token:
-      secure: "TcwyqoPZ0zdEZwMBwJ7xIMLO76sgdaYf6dk6HTjqC6a0aWRk64HJxI3F11weVaL4scVltPNrnz9t86SekGOGTSLKqPmxnJxnpENQ4Agvp1452nOW816q/AZvb7rC1QGOzeofrM3YOsi2yEyzfoHLA2tyZdraatddupa1ybC0f2bes8P5N+jxOplKxb9dCv6lyqlL2DL5AtjZpkLwlAO3J88ftYoEA8DlQrQYhZjeVgyh2oRgX7K1WFRQlGNLgBVPle7rlJsZ4IjYXYKgokzg3LJ1Bfj5YMcqTjupeOz3r3fQercuMUtvl2oDpFi6uJ2SWCcmmBZJclSLg664Vfgexh4W5DPiGHPhxZP9Ey1QTFZx9CmLYm+REnsnB78kEhQl53uapzV2K1RP+ijz4b9qgsp7JtgdKFvmAH1Gx16f0AtTlz+KUObAQLQjEbYIhT3WsHxFo7TpWBHomJHW2THWM2j8ozvRrnlnxy/8oo9HFWWZg6fWOaGWDSOhPqhuUuRuLopNy3/WR7lIjVHpN1oo5XXpIxgfL38lWZu91rZoNGzqNf40amQNfc0mW6sz9GUktaztdqEjuCsY0vFp6UWkpzAEKRTBbpNZbbGtMn50Kv2DJJfzZbOm+4RZ68VOwK9mooN8V00OQVNvIj8paE8OclIrXmokiq+c7PNXc4CHIJI="
-
+      secure: CoH3hSDSeHGcdJZv5OhRxOiprnK5oyq4iDfqSWMbJ+sviPy4oH0pQiLLeqoCANFD9MoznvQwLNTnp7zjoaYG4juD91d7TTwVAJ9aZKxLD7/mEzhhiKWwWSgnUBMRd8gRAJC2rigvOPr1jclXSRUpIUHkPXd+3WC2HYsQODbgTFNCaq2QOS0Ywvwg8XJKuz/c6I0iEtgkgpebsw9zB7v/zCmjFcCkBQGWWDBD+aE7t9LR6NVQjXJioPXWyfnJmKdyk1bJVpTyLogqkDnWUskwqbjnJYVA8oPrIeaC7sHgzpGfWwFptNFFyYcMnYqwLeVWzUaza6FIz1wgGrsCofvkz6ZT6pSr5cKnOxavxbIeakho9Esdx6ncXQ8vTR5fD4yAj4LuIoqChy5fvJCrc8EtZ1li7Cw8FHhBgJUn8GJVsDMNIFsdOmZf5owoh3lQqb43oOWTTaV+Cvt4U0PGlz/mVyps01T4gQjpUsadNXmGfxUtsYOz/qNMTmLm0yqwzOrs3Gx+/kRHNsCfLneWo+6TST6q24paEuS8rcpFsChlBAajMKXBVHQRikTSsws4R8Y99BbqmI1Q4wuBTt4m77nonz9HhnDytqhm9uLFQKLTSPxpYTQAySbLYw8bhDe3eKhyMd519JeF7VEY95MzE9rNhC5ooYLQFz1AryfjW43kO2M=
 jdk:
   - openjdk8
-
 notifications:
   email:
     recipients:
@@ -19,10 +16,8 @@ notifications:
       - gkillough@blackducksoftware.com
       - jrichard@blackducksoftware.com
       - bmandel@blackducksoftware.com
-
 script:
   - mvn clean package
-
 after_success:
   - export DETECT_MAVEN_SCOPE=runtime
   - bash <(curl -s https://copilot.blackducksoftware.com/ci/travis/scripts/upload)
