@@ -13,16 +13,17 @@
         <key property-key="com-synopsys-integration-alert">
             <extract path="name" type="string"/>
             <extract path="provider" type="string"/>
-              <extract path="topicName" type="string"/>
-              <extract path="topicValue" type="string"/>
-              <extract path="subTopicName" type="string"/>
-              <extract path="subTopicValue" type="string"/>
-              <extract path="category" type="string"/>
-              <extract path="componentName" type="string"/>
-              <extract path="componentValue" type="string"/>
-              <extract path="subComponentName" type="string"/>
-              <extract path="subComponentValue" type="string"/>
-              <extract path="additionalKey" type="string"/>
+            <extract path="providerUrl" type="string"/>
+            <extract path="topicName" type="string"/>
+            <extract path="topicValue" type="string"/>
+            <extract path="subTopicName" type="string"/>
+            <extract path="subTopicValue" type="string"/>
+            <extract path="category" type="string"/>
+            <extract path="componentName" type="string"/>
+            <extract path="componentValue" type="string"/>
+            <extract path="subComponentName" type="string"/>
+            <extract path="subComponentValue" type="string"/>
+            <extract path="additionalKey" type="string"/>
         </key>
     </index-document-configuration>
 </atlassian-plugin>
