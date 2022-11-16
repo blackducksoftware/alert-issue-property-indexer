@@ -13,6 +13,15 @@ You can download the latest from GitHub: https://github.com/blackducksoftware/al
 
 This plugin only creates a database index inside of Jira. 
 
+### Atlassian SDK Installation ###
+
+The Atlassian SDK can be found here: https://marketplace.atlassian.com/apps/1210993/atlassian-plugin-sdk-tgz?tab=overview&hosting=server
+
+Installation Instructions: https://developer.atlassian.com/server/framework/atlassian-sdk/install-the-atlassian-sdk-on-a-linux-or-mac-system/
+
+ - Follow the instructions to perform a manual install of the tgz file to avoid OS dependency issues. 
+
+SDK Versions: https://marketplace.atlassian.com/apps/1210993/atlassian-plugin-sdk-tgz/version-history
 
 ### Generating a security scanner report ###
 Use the following commands to generate an OWASP security scanner report:
