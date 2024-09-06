@@ -5,8 +5,8 @@
         <vendor name="${project.organization.name}" url="${project.organization.url}"/>
         <param name="atlassian-data-center-status">compatible</param>
         <param name="atlassian-data-center-compatible">true</param>
-        <param name="plugin-icon">images/synopsysIcon.png</param>
-        <param name="plugin-logo">images/synopsysLogo.png</param>
+        <param name="plugin-icon">images/BlackDuckIcon.png</param>
+        <param name="plugin-logo">images/BlackDuckIcon.png</param>
     </plugin-info>
 
     <index-document-configuration entity-key="IssueProperty" key="com-synopsys-integration-alert">
