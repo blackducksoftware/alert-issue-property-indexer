@@ -10,8 +10,8 @@
     <version>0.0.6-SNAPSHOT</version>
 
     <organization>
-        <name>Synopsys, Inc.</name>
-        <url>https://www.synopsys.com/</url>
+        <name>Black Duck Software, Inc.</name>
+        <url>https://www.blackduck.com/</url>
     </organization>
 
     <name>Alert Issue Property Indexer</name>
@@ -21,10 +21,10 @@
     <developers>
         <developer>
             <id>integrations</id>
-            <name>Synopsys Integrations</name>
-            <email>integrations@synopsys.com</email>
-            <organization>Synopsys, Inc.</organization>
-            <organizationUrl>https://www.synopsys.com/</organizationUrl>
+            <name>Black Duck Integrations</name>
+            <email>integrations@blackduck.com</email>
+            <organization>Black Duck Software, Inc.</organization>
+            <organizationUrl>https://www.blackduck.com/</organizationUrl>
             <roles>
                 <role>developer</role>
             </roles>
