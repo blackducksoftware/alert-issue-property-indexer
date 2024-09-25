@@ -5,7 +5,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.synopsys.integration.alert</groupId>
+    <groupId>com.blackduck.integration.alert</groupId>
     <artifactId>alert-jira-property-indexer</artifactId>
     <version>0.0.6-SNAPSHOT</version>
 
@@ -49,7 +49,7 @@
         <plugin.testrunner.version>2.0.1</plugin.testrunner.version>
         <atlassian.spring.scanner.version>1.2.13</atlassian.spring.scanner.version>
         <!-- This property ensures consistency between the key in atlassian-plugin.xml and the OSGi bundle's key. -->
-        <atlassian.plugin.key>com.synopsys.integration.alert</atlassian.plugin.key>
+        <atlassian.plugin.key>com.blackduck.integration.alert</atlassian.plugin.key>
         <!-- TestKit version 6.x for JIRA 6.x -->
         <testkit.version>6.3.11</testkit.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -193,7 +193,7 @@
 
                         <!-- Add package to export here -->
                         <Export-Package>
-                            com.synopsys.integration.alert.api,
+                            com.blackduck.integration.alert.api,
                         </Export-Package>
 
                         <!-- Add package import here -->

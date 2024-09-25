@@ -9,8 +9,8 @@
         <param name="plugin-logo">images/BlackDuckIcon.png</param>
     </plugin-info>
 
-    <index-document-configuration entity-key="IssueProperty" key="com-synopsys-integration-alert">
-        <key property-key="com-synopsys-integration-alert">
+    <index-document-configuration entity-key="IssueProperty" key="com-blackduck-integration-alert">
+        <key property-key="com-blackduck-integration-alert">
             <extract path="name" type="string"/>
             <extract path="provider" type="string"/>
             <extract path="providerUrl" type="string"/>
