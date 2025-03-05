@@ -35,11 +35,11 @@
     <distributionManagement>
         <repository>
             <id>bds-artifactory</id>
-            <url>https://artifactory.internal.synopsys.com/artifactory/bds-integrations-release</url>
+            <url>https://artifactory.tools.duckutil.net/artifactory/bds-integrations-release</url>
         </repository>
         <snapshotRepository>
             <id>artifactory.blackducksoftware.com</id>
-            <url>https://artifactory.internal.synopsys.com/artifactory/bds-integrations-snapshot</url>
+            <url>https://artifactory.tools.duckutil.net/artifactory/bds-integrations-snapshot</url>
         </snapshotRepository>
     </distributionManagement>
 
