@@ -192,14 +192,6 @@
                         <Atlassian-Plugin-Key>${atlassian.plugin.key}</Atlassian-Plugin-Key>
 
                         <!-- Add package to export here -->
-                <Import-Package>
-                    com.atlassian.plugin.spring.scanner.*,
-                    org.springframework.beans.factory.xml,
-                    org.springframework.beans.factory.parsing,
-                    org.springframework.core.io,
-                    org.xml.sax,
-                    *
-                </Import-Package>
                         <Export-Package>
                             com.blackduck.integration.alert.api,
                         </Export-Package>
@@ -255,27 +247,6 @@
                   </execution>
               </executions>
             </plugin>
-<plugin>
-  <groupId>org.apache.felix</groupId>
-  <artifactId>maven-bundle-plugin</artifactId>
-  <version>5.1.9</version>
-  <extensions>true</extensions>
-  <configuration>
-    <instructions>
-      <Import-Package>
-        com.atlassian.plugin.spring.scanner.runtime,
-        com.atlassian.plugin.spring.scanner.*,
-        org.springframework.beans.factory.xml,
-        org.springframework.beans.factory.parsing,
-        org.springframework.core.io,
-        org.xml.sax,
-        *
-      </Import-Package>
-      <Export-Package>com.blackduck.integration.alert.api</Export-Package>
-      <Spring-Context>*</Spring-Context>
-    </instructions>
-  </configuration>
-</plugin>
         </plugins>
     </build>
 </project>
