@@ -7,7 +7,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.blackduck.integration.alert</groupId>
     <artifactId>alert-jira-property-indexer</artifactId>
-    <version>0.0.7-SNAPSHOT</version>
+    <version>0.1.0-SNAPSHOT</version>
 
     <organization>
         <name>Black Duck Software, Inc.</name>
@@ -44,17 +44,17 @@
     </distributionManagement>
 
     <properties>
-        <jira.version>9.12.0</jira.version>
-        <amps.version>8.11.2</amps.version>
-        <plugin.testrunner.version>2.0.1</plugin.testrunner.version>
-        <atlassian.spring.scanner.version>1.2.13</atlassian.spring.scanner.version>
+        <jira.version>10.5.0</jira.version>
+        <amps.version>8.17.0</amps.version>
+        <plugin.testrunner.version>2.0.0</plugin.testrunner.version>
+        <atlassian.spring.scanner.version>5.1.0</atlassian.spring.scanner.version>
         <!-- This property ensures consistency between the key in atlassian-plugin.xml and the OSGi bundle's key. -->
         <atlassian.plugin.key>com.blackduck.integration.alert</atlassian.plugin.key>
         <!-- TestKit version 6.x for JIRA 6.x -->
         <testkit.version>6.3.11</testkit.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
     </properties>
 
     <repositories>
@@ -121,14 +121,14 @@
             <groupId>com.atlassian.plugin</groupId>
             <artifactId>atlassian-spring-scanner-annotation</artifactId>
             <version>${atlassian.spring.scanner.version}</version>
-            <scope>compile</scope>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>com.atlassian.plugin</groupId>
             <artifactId>atlassian-spring-scanner-runtime</artifactId>
             <version>${atlassian.spring.scanner.version}</version>
-            <scope>runtime</scope>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>
@@ -171,7 +171,7 @@
                 <artifactId>jira-maven-plugin</artifactId>
                 <version>${amps.version}</version>
                 <extensions>true</extensions>
-                <configuration>
+		 <configuration>
                     <productVersion>${jira.version}</productVersion>
                     <productDataVersion>${jira.version}</productDataVersion>
                     <!-- Uncomment to install TestKit backdoor in JIRA. -->
