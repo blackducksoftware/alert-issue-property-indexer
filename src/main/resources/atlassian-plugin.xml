@@ -24,6 +24,7 @@
             <extract path="subComponentName" type="string"/>
             <extract path="subComponentValue" type="string"/>
             <extract path="additionalKey" type="string"/>
+            <extract path="alert9Migrated" type="string"/>
         </key>
     </index-document-configuration>
 </atlassian-plugin>
