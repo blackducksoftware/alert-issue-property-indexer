@@ -70,6 +70,10 @@
               {
                 "objectName": "additionalKey",
                 "type": "string"
+              },
+              {
+                "objectName": "alert9Migrated",
+                "type": "string"
               }
             ]
           }
